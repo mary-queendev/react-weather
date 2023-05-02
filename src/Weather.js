@@ -5,7 +5,7 @@ import MyLocation from "./MyLocation";
 
 export default function Weather() {
   let weatherData = {
-    city: "Paris",
+    city: "New York",
     date: "14/04/2023",
     time: "02:00pm",
     description: "cloudy",
