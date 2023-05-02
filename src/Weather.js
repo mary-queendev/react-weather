@@ -7,7 +7,7 @@ export default function Weather() {
   let weatherData = {
     city: "New York",
     date: "14/04/2023",
-    time: "02:00pm",
+    time: "06:00pm",
     description: "cloudy",
     humidity: 60,
     windspeed: 5,
