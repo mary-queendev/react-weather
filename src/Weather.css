@@ -1,0 +1,78 @@
+li {
+  list-style-type: none;
+  text-align: center;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.cover {
+  margin: 20px auto;
+  border: 3px solid;
+  padding: 20px;
+  border-radius: 8px;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/498/original/3905060_82145.jpg?1679183739");
+  background-size: 100%;
+  /* width: 700px; */
+}
+.myLocation {
+  text-align: center;
+}
+.city,
+.date,
+.temp {
+  display: flex;
+  justify-content: center;
+}
+.top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.input {
+  width: 300px;
+  margin-right: 10px;
+  height: 35px;
+}
+.present {
+  margin: 0;
+}
+.city {
+  font: 44px solid;
+  font-weight: bold;
+  color: #ec6e4c;
+}
+.date,
+.temp,
+.forecast {
+  font-size: 18px;
+  font-weight: 450;
+}
+.symbol {
+  display: flex;
+  justify-content: center;
+}
+.desc:first-letter {
+  text-transform: capitalize;
+}
+
+.cols {
+  border: 2px solid;
+  text-align: center;
+  border-radius: 5px;
+  font: 18px solid;
+  padding: 10px 0;
+}
+.forecast-symbol {
+  font-size: 28px;
+}
+.others {
+  margin-top: 12px;
+}
+.intro {
+  text-align: center;
+}
