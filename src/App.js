@@ -5,8 +5,8 @@ import Footer from "./Footer";
 export default function App() {
   return (
     <div className="container">
-      <Weather />
-      <Footer/>
+      <Weather city="Berlin" />
+      <Footer />
     </div>
   );
 }
