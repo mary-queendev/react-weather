@@ -23,7 +23,7 @@ a {
   text-align: center;
 }
 .city,
-.date,
+
 .temp {
   display: flex;
   justify-content: center;
