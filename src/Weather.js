@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import Forecast from "./Forecast";
 import MyLocation from "./MyLocation";
@@ -9,6 +10,7 @@ export default function Weather(props) {
   const [ready, setReady] = useState(false);
 
   function displayWeather(response) {
+    
     setWeatherData({
       temperature: response.data.main.temp,
       city: response.data.name,
@@ -16,7 +18,7 @@ export default function Weather(props) {
       windspeed: response.data.wind.speed,
       description: response.data.weather[0].description,
       imgUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
-      date: "14/04/2023",
+      date: new Date(response.data.dt * 1000),
       time: "06:00pm",
     });
     setReady(true);
@@ -40,7 +42,9 @@ export default function Weather(props) {
         <div className="row">
           <div className="col">
             <div className="city">{weatherData.city}</div>
-            <div className="date">Last updated: {weatherData.date}</div>
+            <div className="date">
+              Last Updated- <FormattedDate date={weatherData.date} />
+            </div>
             <div className="date">{weatherData.time}</div>
           </div>
 
@@ -79,7 +83,7 @@ export default function Weather(props) {
     );
   } else {
     const apiKey = "3499ef150985eccadd080ff408a018df";
-    
+
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayWeather);
 
