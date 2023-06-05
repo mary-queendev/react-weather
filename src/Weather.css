@@ -38,6 +38,14 @@ a {
   margin-right: 10px;
   height: 35px;
 }
+.WeatherInfo{
+  margin: 40px 0;
+}
+.active{
+  font: 30px bold;
+  text-align: center;
+}
+
 .present {
   margin: 0;
 }
