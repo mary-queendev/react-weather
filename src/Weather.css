@@ -23,7 +23,6 @@ a {
   text-align: center;
 }
 .city,
-
 .temp {
   display: flex;
   justify-content: center;
@@ -38,10 +37,10 @@ a {
   margin-right: 10px;
   height: 35px;
 }
-.WeatherInfo{
+.WeatherInfo {
   margin: 40px 0;
 }
-.active{
+.active {
   font: 30px bold;
   text-align: center;
 }
@@ -55,10 +54,9 @@ a {
   color: #ec6e4c;
 }
 .date,
-.temp,
-.forecast {
+.temp {
   font-size: 18px;
-  font-weight: 450;
+  font-weight: 500;
 }
 .symbol {
   display: flex;
@@ -67,7 +65,9 @@ a {
 .desc:first-letter {
   text-transform: capitalize;
 }
-
+.forecast {
+  display: flex;
+}
 .cols {
   border: 2px solid;
   text-align: center;
