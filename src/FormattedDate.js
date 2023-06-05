@@ -8,5 +8,8 @@ if (minutes<10){
     minutes=`0${minutes}`
 }
 let hour = props.date.getHours()
-        return <div>{day} {hour}:{minutes}</div>
+if (hour<10){
+    hour=`0${hour}`
+}
+        return <span>{day} {hour}:{minutes}</span>
 }

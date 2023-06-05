@@ -17,7 +17,7 @@ a {
   border-radius: 8px;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/498/original/3905060_82145.jpg?1679183739");
   background-size: 100%;
-  max-width: 700px;
+  max-width: 80%;
 }
 .myLocation {
   text-align: center;
